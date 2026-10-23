@@ -34,12 +34,12 @@ export const ReportsView: React.FC = () => {
 
   // Realistic analytics datasets
   const attendanceData = [
-    { name: "Dr. Lungu", attendance: 96, apologies: 4 },
-    { name: "Mr. Mutwale", attendance: 100, apologies: 0 },
-    { name: "Dr. Zimba", attendance: 92, apologies: 8 },
-    { name: "Prof. Situmbeko", attendance: 88, apologies: 12 },
-    { name: "Mrs. Mwanza", attendance: 94, apologies: 6 },
-    { name: "Eng. Chilufya", attendance: 90, apologies: 10 },
+    { name: "Test Director", attendance: 96, apologies: 4 },
+    { name: "Test Board Chair", attendance: 100, apologies: 0 },
+    { name: "Test Finance Chair", attendance: 92, apologies: 8 },
+    { name: "Test Tech Chair", attendance: 88, apologies: 12 },
+    { name: "Test MoFNP Rep", attendance: 94, apologies: 6 },
+    { name: "Test CEO", attendance: 90, apologies: 10 },
   ];
 
   const votingOutcomesData = [
@@ -60,12 +60,12 @@ export const ReportsView: React.FC = () => {
     const csvContent =
       "data:text/csv;charset=utf-8," +
       "Director,Attendance Rate,Apologies,Packs Read,Resolutions Voted,Actions Completed\n" +
-      "Dr. Mwansa K. Lungu,96%,1,8,7,5\n" +
-      "Mr. Joe Mutwale,100%,0,8,7,4\n" +
-      "Dr. Beatrice S. Zimba,92%,2,7,6,3\n" +
-      "Prof. Muyunda M. Situmbeko,88%,3,6,5,2\n" +
-      "Mrs. Chipo K. Mwanza,94%,1,7,6,4\n" +
-      "Eng. Charles M. Banda,100%,0,8,7,6\n";
+      "Test Director,96%,1,8,7,5\n" +
+      "Test Board Chair,100%,0,8,7,4\n" +
+      "Test Director (Finance Chair),92%,2,7,6,3\n" +
+      "Test Director (Technical Chair),88%,3,6,5,2\n" +
+      "Test Ministry Director (MoFNP),94%,1,7,6,4\n" +
+      "Test CEO,100%,0,8,7,6\n";
 
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");

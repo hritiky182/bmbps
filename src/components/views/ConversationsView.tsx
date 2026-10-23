@@ -25,19 +25,19 @@ export const ConversationsView: React.FC = () => {
 
   const [channelMessages, setChannelMessages] = useState<Record<string, { id: string; user: string; avatar: string; time: string; text: string }[]>>({
     general: [
-      { id: "m1", user: "Mr. Joe Mutwale", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80", time: "09:12", text: "Good morning distinguished directors. Please ensure all comments on the 84th Ordinary Board pack are submitted by tomorrow." },
-      { id: "m2", user: "Dr. Mwansa K. Lungu", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80", time: "09:20", text: "Noted Mr. Chairman. The Audit & Risk Committee has completed review of the Auditor General's fuel levy letter." },
-      { id: "m3", user: "Mrs. Mutale Chileshe", avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80", time: "09:45", text: "Vol. II docket has been published in BoardConnect. Offline reading is available." },
+      { id: "m1", user: "Test Board Chair", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80", time: "09:12", text: "Good morning distinguished directors. Please ensure all comments on the 84th Ordinary Board pack are submitted by tomorrow." },
+      { id: "m2", user: "Test Director", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80", time: "09:20", text: "Noted Board Chair. The Audit & Risk Committee has completed review of the Auditor General's fuel levy letter." },
+      { id: "m3", user: "Test Secretary", avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80", time: "09:45", text: "Vol. II docket has been published in BoardConnect. Offline reading is available." },
     ],
     audit: [
-      { id: "a1", user: "Dr. Mwansa K. Lungu", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80", time: "Yesterday", text: "Colleagues, let us examine the cash reconciliation progress for Shimabala toll gate." },
-      { id: "a2", user: "Mrs. Nchimunya V. Halwiindi", avatar: "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=150&auto=format&fit=crop&q=80", time: "Yesterday", text: "Cash variance reduced to under 0.02% following point-of-sale terminal upgrades." },
+      { id: "a1", user: "Test Director", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80", time: "Yesterday", text: "Colleagues, let us examine the cash reconciliation progress for Shimabala toll gate." },
+      { id: "a2", user: "Test Internal Auditor", avatar: "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=150&auto=format&fit=crop&q=80", time: "Yesterday", text: "Cash variance reduced to under 0.02% following point-of-sale terminal upgrades." },
     ],
     tolling: [
-      { id: "t1", user: "Eng. Dalitso Phiri", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80", time: "Oct 21", text: "FastPass solar mini-grid installations completed at Katuba plaza." },
+      { id: "t1", user: "Test Admin", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80", time: "Oct 21", text: "FastPass solar mini-grid installations completed at Katuba plaza." },
     ],
     finance: [
-      { id: "f1", user: "Mrs. Jacqueline S. Musonda", avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80", time: "Oct 22", text: "Treasury disbursements to RDA reached ZMW 1.02 Billion for Q3." },
+      { id: "f1", user: "Test Finance Director", avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80", time: "Oct 22", text: "Treasury disbursements to RDA reached ZMW 1.02 Billion for Q3." },
     ],
   });
 

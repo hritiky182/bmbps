@@ -210,7 +210,7 @@ export const DashboardView: React.FC = () => {
               <div>
                 <span className="text-slate-400 text-[10px] uppercase font-bold block">Meeting Chair</span>
                 <span className="font-semibold text-slate-800 dark:text-slate-200">
-                  Mr. Joe Mutwale
+                  Test Board Chair
                 </span>
               </div>
             </div>

@@ -140,12 +140,12 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const STORAGE_PREFIX = "nrfa_boardconnect_v1_";
+const STORAGE_PREFIX = "nrfa_boardconnect_v2_";
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Auth state
   const [currentRole, setCurrentRole] = useState<UserRole>("member");
-  const [currentUser, setCurrentUser] = useState<User>(SEED_USERS[2]); // Dr. Mwansa Lungu by default
+  const [currentUser, setCurrentUser] = useState<User>(SEED_USERS[2]); // Test Director by default
   const [isDisclaimerAccepted, setIsDisclaimerAccepted] = useState<boolean>(false);
   const [isDark, setIsDark] = useState<boolean>(false);
 
@@ -689,7 +689,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const fullUser: User = {
       id,
       name: newUser.name || "New Director",
-      email: newUser.email || "director@nrfa.org.zm",
+      email: newUser.email || "director@test.com",
       role: newUser.role || "member",
       title: newUser.title || "Board Director",
       department: newUser.department || "NRFA Board",

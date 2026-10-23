@@ -352,7 +352,7 @@ export const SignaturesView: React.FC = () => {
                   <div className="p-4 rounded-xl border-2 border-emerald-600/30 bg-emerald-50/30 dark:bg-emerald-950/20 text-center">
                     <span className="text-[10px] text-slate-400 block mb-1">Signature Seal Preview:</span>
                     <div className="text-2xl font-serif italic text-emerald-950 dark:text-emerald-200 tracking-wide py-2">
-                      {typedName || "Dr. Mwansa K. Lungu"}
+                      {typedName || currentUser.name || "Test Director"}
                     </div>
                     <div className="text-[10px] text-emerald-700 dark:text-emerald-400 font-mono">
                       Verified Board Member • NRFA Zambia

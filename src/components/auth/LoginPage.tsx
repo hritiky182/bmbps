@@ -22,7 +22,7 @@ interface LoginPageProps {
 
 export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   const { switchRole, addToast } = useApp();
-  const [email, setEmail] = useState("mwansa.lungu@nrfa.org.zm");
+  const [email, setEmail] = useState("director@test.com");
   const [password, setPassword] = useState("••••••••••••");
 
   const handleQuickLogin = (role: UserRole) => {
@@ -32,9 +32,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.includes("admin") || email.includes("dalitso")) {
+    if (email.includes("admin")) {
       switchRole("admin");
-    } else if (email.includes("sec") || email.includes("mutale")) {
+    } else if (email.includes("sec")) {
       switchRole("secretary");
     } else {
       switchRole("member");
@@ -119,10 +119,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                   </div>
                   <div>
                     <div className="font-bold text-xs text-white group-hover:text-emerald-300 transition-colors">
-                      Dr. Mwansa K. Lungu
+                      Test Director
                     </div>
                     <div className="text-[10px] text-emerald-400">
-                      Non-Executive Director & Audit Chair
+                      Board Director & Audit Committee Chair
                     </div>
                   </div>
                 </div>
@@ -141,10 +141,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                   </div>
                   <div>
                     <div className="font-bold text-xs text-white group-hover:text-blue-300 transition-colors">
-                      Mrs. Mutale Chileshe
+                      Test Secretary
                     </div>
                     <div className="text-[10px] text-slate-400">
-                      Corporate Board Secretary & Legal Counsel
+                      Board Secretary & Legal Counsel
                     </div>
                   </div>
                 </div>
@@ -163,10 +163,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                   </div>
                   <div>
                     <div className="font-bold text-xs text-white group-hover:text-purple-300 transition-colors">
-                      Eng. Dalitso Phiri
+                      Test Admin
                     </div>
                     <div className="text-[10px] text-slate-400">
-                      ICT Director & System Administrator
+                      System Administrator & Head of ICT
                     </div>
                   </div>
                 </div>

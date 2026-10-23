@@ -53,9 +53,9 @@ export const LiveMeetingRoomView: React.FC = () => {
 
   // Live Chat messages
   const [messages, setMessages] = useState([
-    { id: "m1", user: "Mr. Joe Mutwale (Board Chair)", time: "10:14", text: "Welcome directors. We are now considering Agenda Item 4.0 - CEO Quarterly Overview." },
-    { id: "m2", user: "Eng. Charles M. Banda (CEO)", time: "10:16", text: "Thank you Chairman. Pavement Condition Index has improved to 71% nationwide." },
-    { id: "m3", user: "Mrs. Mutale Chileshe (Sec.)", time: "10:18", text: "Quorum is confirmed at 14 voting directors present." },
+    { id: "m1", user: "Test Board Chair", time: "10:14", text: "Welcome directors. We are now considering Agenda Item 4.0 - CEO Quarterly Overview." },
+    { id: "m2", user: "Test CEO", time: "10:16", text: "Thank you Chairman. Pavement Condition Index has improved to 71% nationwide." },
+    { id: "m3", user: "Test Secretary", time: "10:18", text: "Quorum is confirmed at 14 voting directors present." },
   ]);
   const [chatInput, setChatInput] = useState("");
 
@@ -185,7 +185,7 @@ export const LiveMeetingRoomView: React.FC = () => {
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
                 />
                 <div className="relative z-10 flex items-center justify-between">
-                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">J. Mutwale (Chair)</span>
+                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">Test Board Chair</span>
                   <Mic className="w-3 h-3 text-emerald-400" />
                 </div>
               </div>
@@ -198,7 +198,7 @@ export const LiveMeetingRoomView: React.FC = () => {
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
                 />
                 <div className="relative z-10 flex items-center justify-between">
-                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">C. Banda (CEO)</span>
+                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">Test CEO</span>
                   <Mic className="w-3 h-3 text-emerald-400" />
                 </div>
               </div>
@@ -211,7 +211,7 @@ export const LiveMeetingRoomView: React.FC = () => {
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
                 />
                 <div className="relative z-10 flex items-center justify-between">
-                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">M. Chileshe (Sec)</span>
+                  <span className="text-[10px] font-bold text-white truncate drop-shadow-md">Test Secretary</span>
                   <MicOff className="w-3 h-3 text-red-400" />
                 </div>
               </div>
@@ -338,7 +338,7 @@ export const LiveMeetingRoomView: React.FC = () => {
 
             {/* Slide Footer */}
             <div className="flex items-center justify-between text-[10px] text-slate-500 pt-3 border-t border-slate-800">
-              <span>Presenter: Eng. Charles M. Banda (Chief Executive Officer)</span>
+              <span>Presenter: Test CEO (Chief Executive Officer)</span>
               <span>Click slide anywhere to move the laser pointer dot</span>
             </div>
           </div>

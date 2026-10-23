@@ -206,7 +206,7 @@ export const MinutesView: React.FC = () => {
                     Chairperson Attestation
                   </div>
                   <div className="font-semibold text-slate-900 dark:text-white mt-0.5">
-                    {selectedMin.approvedBy || "Mr. Joe Mutwale (Board Chairperson)"}
+                    {selectedMin.approvedBy || "Test Board Chair (Board Chairperson)"}
                   </div>
                   <div className="text-[11px] text-slate-500">
                     Status: {selectedMin.status === "approved" ? "Confirmed & Signed" : "Awaiting Signature"}

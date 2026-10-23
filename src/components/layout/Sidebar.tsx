@@ -47,11 +47,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigateMobile }) => {
 
   const navItemClass = (key: string) => {
     const isActive = activeTab === key;
-    return `w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all group ${
-      isActive
+    return `w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all group ${isActive
         ? "bg-emerald-900 text-white shadow-md shadow-emerald-950/20 dark:bg-emerald-800"
         : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60"
-    }`;
+      }`;
   };
 
   return (
@@ -64,7 +63,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigateMobile }) => {
           </div>
           <div className="flex-1 min-w-0">
             <div className="text-[10px] font-black tracking-widest text-emerald-800 dark:text-emerald-400 uppercase">
-              NRFA ZAMBIA
+              NRFA ZAMBIA(Demo)
             </div>
             <div className="text-base font-extrabold text-slate-900 dark:text-white tracking-tight leading-none flex items-center gap-1.5 mt-0.5">
               <span>BoardConnect</span>

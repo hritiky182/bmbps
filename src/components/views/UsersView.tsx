@@ -190,13 +190,12 @@ export const UsersView: React.FC = () => {
 
                   <td className="p-3.5">
                     <span
-                      className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase ${
-                        u.role === "admin"
-                          ? "bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300"
-                          : u.role === "secretary"
+                      className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase ${u.role === "admin"
+                        ? "bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300"
+                        : u.role === "secretary"
                           ? "bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300"
                           : "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
-                      }`}
+                        }`}
                     >
                       {u.role === "admin" ? <Shield className="w-3 h-3" /> : u.role === "secretary" ? <Briefcase className="w-3 h-3" /> : <UserCheck className="w-3 h-3" />}
                       <span>{u.role}</span>
@@ -214,11 +213,10 @@ export const UsersView: React.FC = () => {
                         e.stopPropagation();
                         toggleUserStatus(u.id);
                       }}
-                      className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${
-                        u.status === "active"
-                          ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 hover:bg-rose-100"
-                          : "bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-400 hover:bg-emerald-100"
-                      }`}
+                      className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${u.status === "active"
+                        ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 hover:bg-rose-100"
+                        : "bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-400 hover:bg-emerald-100"
+                        }`}
                       title="Click to toggle status"
                     >
                       {u.status}
@@ -271,7 +269,7 @@ export const UsersView: React.FC = () => {
                   required
                   value={newName}
                   onChange={(e) => setNewName(e.target.value)}
-                  placeholder="e.g. Dr. Kasonde Mwamba"
+                  placeholder="e.g. Test Director"
                   className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-hidden focus:border-emerald-600"
                 />
               </div>
@@ -283,7 +281,7 @@ export const UsersView: React.FC = () => {
                   required
                   value={newEmail}
                   onChange={(e) => setNewEmail(e.target.value)}
-                  placeholder="name@nrfa.org.zm"
+                  placeholder="director@test.com"
                   className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-hidden focus:border-emerald-600"
                 />
               </div>
